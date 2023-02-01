@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_events">
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/project_management"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view43"
+        app:layout_constraintEnd_toEndOf="@+id/view43"
+        app:layout_constraintStart_toStartOf="@+id/view43"
+        app:layout_constraintTop_toTopOf="@+id/view43" />
+
+    <View
+        android:id="@+id/view43"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/admineventslogobackground"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="300dp"
+        android:layout_height="22dp"
+        android:background="@drawable/icons_backgrounds_admin"
+        android:text="@string/admin_events"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/view30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view43" />
+
+    <View
+        android:id="@+id/view29"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/admineventsheader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view30"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/user_views_backgrounds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view29" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="320dp"
+        android:layout_height="7dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view30" />
+
+    <View
+        android:id="@+id/view35"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:background="@drawable/user_views_backgrounds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="320dp"
+        android:layout_height="7dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view35" />
+
+    <View
+        android:id="@+id/view37"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:background="@drawable/user_views_backgrounds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <View
+        android:id="@+id/view38"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/admineventsheader"
+        android:rotationX="-180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/four_calendar"
+        app:layout_constraintStart_toStartOf="@+id/view30"
+        app:layout_constraintTop_toTopOf="@+id/view30" />
+
+    <TextView
+        android:id="@+id/textViewUserDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/firstevent"
+        android:textColor="#91033B"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/view30" />
+
+    <TextView
+        android:id="@+id/textViewUserLocation1"
+        android:layout_width="230dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/punctuation"
+        android:textColor="#028E08"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserDate1" />
+
+    <TextView
+        android:id="@+id/textViewUserAbout1"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/punctuation"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserLocation1" />
+
+    <View
+        android:id="@+id/view39"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_baseline_options"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/view30"
+        app:layout_constraintTop_toTopOf="@+id/view30" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/four_calendar"
+        app:layout_constraintStart_toStartOf="@+id/view35"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textViewUserDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/secondevent"
+        android:textColor="#91033B"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toTopOf="@+id/view35" />
+
+    <TextView
+        android:id="@+id/textViewUserLocation2"
+        android:layout_width="230dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/punctuation"
+        android:textColor="#028E08"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserDate2" />
+
+    <TextView
+        android:id="@+id/textViewUserAbout2"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/punctuation"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserLocation2" />
+
+    <View
+        android:id="@+id/view40"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_baseline_options"
+        app:layout_constraintEnd_toEndOf="@+id/view35"
+        app:layout_constraintTop_toTopOf="@+id/view35" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/four_calendar"
+        app:layout_constraintStart_toStartOf="@+id/view37"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/textViewUserDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/thirdevent"
+        android:textColor="#91033B"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/textViewUserLocation3"
+        android:layout_width="230dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/punctuation"
+        android:textColor="#028E08"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserDate3" />
+
+    <TextView
+        android:id="@+id/textViewUserAbout3"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/punctuation"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/imageView20"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUserLocation3" />
+
+    <View
+        android:id="@+id/view41"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_baseline_options"
+        app:layout_constraintEnd_toEndOf="@+id/view37"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

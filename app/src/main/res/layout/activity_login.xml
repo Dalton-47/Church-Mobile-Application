@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099ff"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/loginRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/user_views_backgrounds"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_login_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Please enter your credentials to login"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <TextView
+            android:id="@+id/textView_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_login_head"
+            android:layout_marginTop="34dp"
+            android:padding="6dp"
+            android:text="Email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editText_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_login_email"
+            android:background="@drawable/user_views_backgrounds"
+            android:hint="Enter email*"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_login_email"
+            android:layout_marginTop="10dp"
+            android:padding="6dp"
+            android:text="Password*"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView_show_hide_password"
+            android:layout_width="30dp"
+            android:layout_height="32dp"
+            android:layout_alignEnd="@+id/editText_login_password"
+            android:layout_alignBottom="@+id/editText_login_password"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="15dp" />
+
+        <EditText
+            android:id="@+id/editText_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_login_password"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/user_views_backgrounds"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_login_password"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/refresh_btn_background"
+            android:text="Login"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button_forgot_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_login"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/refresh_btn_background"
+            android:text="Forgot Password?"
+            android:textColor="#FFFFFF" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:indeterminateDrawable="@drawable/progress_icon"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

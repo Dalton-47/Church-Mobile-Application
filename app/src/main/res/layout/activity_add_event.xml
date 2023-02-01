@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".add_event">
+
+    <View
+        android:id="@+id/view27"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#0099ff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view28"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/admineventsheader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view27" />
+
+    <View
+        android:id="@+id/viewEvent1"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/addevent_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view28" />
+
+    <View
+        android:id="@+id/dividerEvent2"
+        android:layout_width="320dp"
+        android:layout_height="7dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewEvent1" />
+
+    <View
+        android:id="@+id/viewEvent2"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:background="@drawable/addevent_background"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerEvent2" />
+
+    <View
+        android:id="@+id/dividerEvent3"
+        android:layout_width="320dp"
+        android:layout_height="7dp"
+        android:background="?android:attr/listDivider"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewEvent2" />
+
+    <View
+        android:id="@+id/viewEvent3"
+        android:layout_width="340dp"
+        android:layout_height="150dp"
+        android:background="@drawable/addevent_background"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerEvent3" />
+
+    <ImageView
+        android:id="@+id/imageViewEvent1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/one_calendar"
+        app:layout_constraintStart_toStartOf="@+id/viewEvent1"
+        app:layout_constraintTop_toTopOf="@+id/viewEvent1" />
+
+    <TextView
+        android:id="@+id/textViewDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/firstevent"
+        android:textColor="#91033B"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEvent1"
+        app:layout_constraintTop_toTopOf="@+id/viewEvent1" />
+
+    <TextView
+        android:id="@+id/textViewLocation1"
+        android:layout_width="230dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/punctuation"
+        android:textColor="#028E08"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEvent1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate1" />
+
+    <TextView
+        android:id="@+id/textViewAbout1"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/punctuation"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEvent1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocation1" />
+
+    <View
+        android:id="@+id/view32"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/admineventslogobackground"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view27" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:contentDescription="@string/addevent"
+        android:foreground="@drawable/ic_baseline_add_24"
+        app:backgroundTint="#FFEBEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/project_management"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view32"
+        app:layout_constraintEnd_toEndOf="@+id/view32"
+        app:layout_constraintStart_toStartOf="@+id/view32"
+        app:layout_constraintTop_toBottomOf="@+id/view27" />
+
+    <ImageView
+        android:id="@+id/imageViewEvent2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/one_calendar"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/viewEvent2"
+        app:layout_constraintTop_toBottomOf="@+id/dividerEvent2" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="300dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/icons_backgrounds_admin"
+        android:text="@string/admin_events"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view32" />
+
+    <TextView
+        android:id="@+id/textViewDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/secondevent"
+        android:textColor="#91033B"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEvent2"
+        app:layout_constraintTop_toBottomOf="@+id/dividerEvent2" />
+
+    <TextView
+        android:id="@+id/textViewLocation2"
+        android:layout_width="230dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/punctuation"
+        android:textColor="#028E08"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEvent2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate2" />
+
+    <TextView
+        android:id="@+id/textViewAbout2"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/punctuation"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEvent2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocation2" />
+
+    <ImageView
+        android:id="@+id/imageViewEvent3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/one_calendar"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/viewEvent3"
+        app:layout_constraintTop_toBottomOf="@+id/dividerEvent3" />
+
+    <TextView
+        android:id="@+id/textViewDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/thirdevent"
+        android:textColor="#91033B"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEvent3"
+        app:layout_constraintTop_toBottomOf="@+id/dividerEvent3" />
+
+    <TextView
+        android:id="@+id/textViewLocation3"
+        android:layout_width="230dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/punctuation"
+        android:textColor="#028E08"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEvent3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate3" />
+
+    <TextView
+        android:id="@+id/textViewAbout3"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/punctuation"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEvent3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocation3" />
+
+    <View
+        android:id="@+id/viewDeleteFirstEvent"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        app:layout_constraintEnd_toEndOf="@+id/viewEvent1"
+        app:layout_constraintTop_toTopOf="@+id/viewEvent1" />
+
+    <View
+        android:id="@+id/viewDeleteSecondEvent"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        app:layout_constraintEnd_toEndOf="@+id/viewEvent2"
+        app:layout_constraintTop_toBottomOf="@+id/dividerEvent2" />
+
+    <View
+        android:id="@+id/viewDeleteThirdEvent"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/ic_baseline_delete_24"
+        app:layout_constraintEnd_toEndOf="@+id/viewEvent3"
+        app:layout_constraintTop_toBottomOf="@+id/dividerEvent3" />
+
+    <ProgressBar
+        android:id="@+id/progressBarAdminEvents"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDate2"
+        app:layout_constraintEnd_toEndOf="@+id/viewEvent2"
+        app:layout_constraintStart_toStartOf="@+id/viewEvent2"
+        app:layout_constraintTop_toTopOf="@+id/viewEvent1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

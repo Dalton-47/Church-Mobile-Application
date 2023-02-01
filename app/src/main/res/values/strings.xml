@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Newlife_Narok_SDA_church_management_app</string>
+    <string name="title_activity_user_home_page">UserHomePage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="tithes">TITHES AND OFFERINGS</string>
+    <string name="contributions">MY\nCONTRIBUTIONS</string>
+    <string name="reports">MY\nREPORTS</string>
+    <string name="settings">MY\nSETTINGS</string>
+    <string name="username">HELLO DALTON</string>
+    <string name="usermesssage">IT\'S GREAT HAVING YOU AROUND!</string>
+    <string name="openbible">OPEN \nBIBLE</string>
+    <string name="events">MY\nEVENTS</string>
+    <string name="exodus">EXODUS 35:5</string>
+    <string name="bible_verse">\"Take from among you an offering to the Lord; everyone who has the impulse in his heart, let him give his offering to the Lord; gold, silver and brass.\"</string>
+    <string name="lipa_na_mpesa">LIPA NA MPESA</string>
+    <string name="send_money">SEND MONEY</string>
+    <string name="paybill">PAYBILL</string>
+    <string name="buygoodsandservices">BUY GOODS AND SERVICES</string>
+    <string name="entertill">ENTER TILL NO HERE</string>
+    <string name="okay">OK</string>
+    <string name="enter_amount">ENTER AMOUNT</string>
+    <string name="enter_password">ENTER PIN</string>
+    <string name="abc">abc....123</string>
+    <string name="cancel">CANCEL</string>
+    <string name="enteradmincode">ENTER ADMIN CODE BELOW</string>
+    <string name="loginasadmin">LOGIN AS ADMIN</string>
+    <string name="admin">ADMIN</string>
+    <string name="mydashboard">MY DASHBOARD</string>
+    <string name="manageevents">MANAGE EVENTS</string>
+    <string name="financialstatus">FINANCIAL STATUS</string>
+    <string name="upcomingevents">UPCOMING CHURCH EVENTS</string>
+    <string name="bible">BIBLE</string>
+    <string name="hymnal">HYMNAL</string>
+    <string name="tithe">TITHE</string>
+    <string name="date">20/09/2022</string>
+    <string name="location">ST PETER\'S SQUARE</string>
+    <string name="about">PASTOR DANIEL\'S FAREWELL CEREMONY AS HE EMBARKS ON A MISSION TO START HIS OWN MINISTRY.</string>
+    <string name="addevent">ADD EVENT</string>
+    <string name="admin_events">NEWLIFE-CHURCH UPCOMING EVENTS</string>
+    <string name="new_event">NEW EVENT</string>
+    <string name="textdate">DATE</string>
+    <string name="textdatehint">click icon to set date</string>
+    <string name="textlocation">LOCATION</string>
+    <string name="textlocationhint">click here to type the  event location (less than 10 words)</string>
+    <string name="location_hint">click here to type location (less than 10 words)</string>
+    <string name="text_about">ABOUT EVENT</string>
+    <string name="text_about_event">write info about the event (less than 18 words)</string>
+    <string name="save">SAVE DETAILS</string>
+    <string name="savedate">SAVE DATE</string>
+    <string name="refresh">REFRESH</string>
+    <string name="loading">LOADING...</string>
+    <string name="firstevent">FIRST EVENT</string>
+    <string name="punctuation">......................</string>
+    <string name="secondevent">SECOND EVENT</string>
+    <string name="thirdevent">THIRD EVENT</string>
+    <string name="lefo">LEFOCATY TECHNOLOGIES</string>
+    <string name="mpesaconfirmation">NEW LIFE CHURCH will receive KSH 100.00. To STOP this transaction, send any letter or number within 25 seconds. Cost KSH0.00</string>
+
+</resources>

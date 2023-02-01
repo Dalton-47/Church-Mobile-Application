@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.newlife_narok_sda_church_management_app">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app"
+        tools:targetApi="31">
+        <activity
+            android:name=".user_events"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar"/>
+        <activity
+            android:name=".admin_setting_event"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".add_event"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".Admin_Home_Page"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".admin_code"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".final_mpesa_send"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".enter_pin"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".enter_amount"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".lipa_na_mpesa"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".newLifeUser"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".financial_page"
+            android:exported="false"
+            android:theme="@style/Theme.Newlife_Narok_SDA_church_management_app.NoActionBar" />
+        <activity
+            android:name=".UserHomePage"
+            android:exported="false"
+            android:label="@string/title_activity_user_home_page"
+           />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false"
+           />
+        <activity
+            android:name=".UpdateEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadProfilePicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+
+           />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+           />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

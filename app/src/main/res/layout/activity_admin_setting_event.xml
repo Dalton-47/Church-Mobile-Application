@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0F2F1"
+    tools:context=".admin_setting_event">
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/project_management"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view36"
+        app:layout_constraintEnd_toEndOf="@+id/view36"
+        app:layout_constraintStart_toStartOf="@+id/view36"
+        app:layout_constraintTop_toTopOf="@+id/view36" />
+
+    <View
+        android:id="@+id/view36"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/admineventslogobackground"
+        android:elevation="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view33" />
+
+    <View
+        android:id="@+id/view33"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/admineventsheader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view34"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/admineventsheader"
+        android:rotationX="-180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view42"
+        android:layout_width="325dp"
+        android:layout_height="400dp"
+        android:background="@drawable/border"
+        app:layout_constraintBottom_toTopOf="@+id/view34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view33" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="120dp"
+        android:layout_height="23dp"
+        android:background="@drawable/admineventsheader"
+        android:text="@string/new_event"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/view42"
+        app:layout_constraintStart_toStartOf="@+id/view42"
+        app:layout_constraintTop_toTopOf="@+id/view42" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/textdate"
+        android:textColor="#403E3E"
+        app:layout_constraintStart_toStartOf="@+id/view42"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textViewAdminEventDate"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/user_views_backgrounds"
+        android:hint="@string/textdatehint"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#0097A7"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/view42"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <View
+        android:id="@+id/viewShowAdminCalendar"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/schedule"
+        android:elevation="15dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewAdminEventDate"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textlocation"
+        android:textColor="#403E3E"
+        app:layout_constraintStart_toStartOf="@+id/view42"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAdminEventDate" />
+
+    <EditText
+        android:id="@+id/editTextTextAdminLocation"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/user_views_backgrounds"
+        android:hint="@string/location_hint"
+        android:inputType="textPersonName"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="6dp"
+        android:textAlignment="viewStart"
+        android:textColorHint="#0097A7"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/view42"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/text_about"
+        android:textColor="#403E3E"
+        app:layout_constraintStart_toStartOf="@+id/view42"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextAdminLocation" />
+
+    <EditText
+        android:id="@+id/editTextTextAdminEvent"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/user_views_backgrounds"
+        android:hint="@string/text_about_event"
+        android:inputType="textPersonName"
+        android:padding="6dp"
+        android:singleLine="false"
+        android:textColor="#000000"
+        android:textColorHint="#0097A7"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/view42"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <Button
+        android:id="@+id/buttonAdminSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#03BA0B"
+        android:text="@string/save"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/view42"
+        app:layout_constraintEnd_toEndOf="@+id/view42"
+        app:layout_constraintStart_toStartOf="@+id/view42"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextAdminEvent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

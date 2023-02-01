@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_two"
+    tools:context=".Admin_Home_Page">
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:background="#17E8F5E9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="0dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/admin_purple_shade"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <View
+        android:id="@+id/viewAdminEvents"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/icons_backgrounds_admin"
+        android:backgroundTint="#B3E5FC"
+        app:layout_constraintStart_toStartOf="@+id/view19"
+        app:layout_constraintTop_toTopOf="@+id/view19" />
+
+    <View
+        android:id="@+id/view21"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/icons_backgrounds_admin"
+        android:backgroundTint="#B3E5FC"
+        app:layout_constraintEnd_toEndOf="@+id/view19"
+        app:layout_constraintTop_toTopOf="@+id/view19" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/programmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/admin"
+        android:textColor="#E0F2F1"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usermesssage"
+        android:textColor="#E0F2F1"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/view18"
+        app:layout_constraintStart_toStartOf="@+id/view18"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="144dp"
+        android:layout_height="129dp"
+        android:background="@drawable/top_right_corner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view22"
+        android:layout_width="144dp"
+        android:layout_height="129dp"
+        android:background="@drawable/top_right_corner"
+        android:rotationX="-180"
+        android:rotationY="-180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view23"
+        android:layout_width="330dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/icons_backgrounds_admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view21" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="130dp"
+        android:layout_height="20dp"
+        android:background="@drawable/text_background"
+        android:backgroundTint="#018CFD"
+        android:text="@string/manageevents"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/viewAdminEvents"
+        app:layout_constraintStart_toStartOf="@+id/viewAdminEvents"
+        app:layout_constraintTop_toTopOf="@+id/viewAdminEvents" />
+
+    <View
+        android:id="@+id/viewAdminBible"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/icons_backgrounds_admin"
+        android:backgroundTint="#B3E5FC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+    <View
+        android:id="@+id/viewAdminHymns"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/icons_backgrounds_admin"
+        android:backgroundTint="#B3E5FC"
+        app:layout_constraintStart_toEndOf="@+id/viewAdminBible"
+        app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+    <View
+        android:id="@+id/viewAdminTithe"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/icons_backgrounds_admin"
+        android:backgroundTint="#B3E5FC"
+        app:layout_constraintStart_toEndOf="@+id/viewAdminHymns"
+        app:layout_constraintTop_toBottomOf="@+id/view23" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:backgroundTint="#018CFD"
+        android:text="@string/financialstatus"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toStartOf="@+id/view21"
+        app:layout_constraintTop_toTopOf="@+id/view21" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:backgroundTint="#B264B5F6"
+        android:elevation="15dp"
+        android:text="@string/upcomingevents"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/view23"
+        app:layout_constraintStart_toStartOf="@+id/view23"
+        app:layout_constraintTop_toTopOf="@+id/view23" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:backgroundTint="#018CFD"
+        android:text="@string/bible"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/viewAdminBible"
+        app:layout_constraintStart_toStartOf="@+id/viewAdminBible"
+        app:layout_constraintTop_toTopOf="@+id/viewAdminBible" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:backgroundTint="#018CFD"
+        android:text="@string/hymnal"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/viewAdminHymns"
+        app:layout_constraintStart_toStartOf="@+id/viewAdminHymns"
+        app:layout_constraintTop_toTopOf="@+id/viewAdminHymns" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_background"
+        android:backgroundTint="#018CFD"
+        android:text="@string/tithe"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/viewAdminTithe"
+        app:layout_constraintStart_toStartOf="@+id/viewAdminTithe"
+        app:layout_constraintTop_toTopOf="@+id/viewAdminTithe" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/calendar"
+        app:layout_constraintEnd_toEndOf="@+id/viewAdminEvents"
+        app:layout_constraintStart_toStartOf="@+id/viewAdminEvents"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/donation"
+        app:layout_constraintEnd_toEndOf="@+id/view21"
+        app:layout_constraintStart_toStartOf="@+id/view21"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/upcoming"
+        android:elevation="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view23"
+        app:layout_constraintStart_toStartOf="@+id/view23"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bible"
+        app:layout_constraintEnd_toEndOf="@+id/viewAdminBible"
+        app:layout_constraintStart_toStartOf="@+id/viewAdminBible"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/tithe"
+        app:layout_constraintEnd_toEndOf="@+id/viewAdminTithe"
+        app:layout_constraintStart_toStartOf="@+id/viewAdminTithe"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/hymns"
+        app:layout_constraintEnd_toEndOf="@+id/viewAdminHymns"
+        app:layout_constraintStart_toStartOf="@+id/viewAdminHymns"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <HorizontalScrollView
+        android:layout_width="250dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/admin"
+        app:layout_constraintEnd_toEndOf="@+id/view23"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewAdminHomeDate1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:hint="@string/firstevent"
+                        android:textColor="#91033B"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewAdminHomeLocation1"
+                        android:layout_width="230dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:hint="@string/punctuation"
+                        android:textColor="#028E08"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewAdminHomeDate1" />
+
+                    <TextView
+                        android:id="@+id/textViewAdminHomeAbout1"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="6dp"
+                        android:hint="@string/punctuation"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewAdminHomeLocation1" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewAdminHomeDate2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:hint="@string/secondevent"
+                        android:textColor="#91033B"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewAdminHomeLocation2"
+                        android:layout_width="230dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:hint="@string/punctuation"
+                        android:textColor="#028E08"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewAdminHomeDate2" />
+
+                    <TextView
+                        android:id="@+id/textViewAdminHomeAbout2"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="6dp"
+                        android:hint="@string/punctuation"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewAdminHomeLocation2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textViewAdminHomeDate3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:hint="@string/thirdevent"
+                        android:textColor="#91033B"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textViewAdminHomeLocation3"
+                        android:layout_width="235dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:hint="@string/punctuation"
+                        android:textColor="#028E08"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewAdminHomeDate3" />
+
+                    <TextView
+                        android:id="@+id/textViewAdminHomeAbout3"
+                        android:layout_width="235dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="6dp"
+                        android:hint="@string/punctuation"
+                        android:textColor="#000000"
+                        android:textSize="13sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textViewAdminHomeLocation3" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBarAdminHome"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/progress_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/view23"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

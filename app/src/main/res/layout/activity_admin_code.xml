@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_two"
+    tools:context=".admin_code">
+
+    <View
+        android:id="@+id/view16"
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:background="@drawable/user_views_backgrounds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/enteradmincode"
+        android:textColor="#ED333232"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/view16"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/view16"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/editTextTextAdminPassword"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@drawable/user_views_backgrounds"
+        android:ems="10"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHint="#607D8B"
+        app:layout_constraintEnd_toEndOf="@+id/view16"
+        app:layout_constraintStart_toStartOf="@+id/view16"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/buttonAdminCode"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/refresh_btn_background"
+        android:text="@string/okay"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/view16"
+        app:layout_constraintStart_toStartOf="@+id/view16"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextAdminPassword" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="@string/loginasadmin"
+        android:textColor="#91033B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view16"
+        app:layout_constraintStart_toStartOf="@+id/view16"
+        app:layout_constraintTop_toTopOf="@+id/view16" />
+</androidx.constraintlayout.widget.ConstraintLayout>
